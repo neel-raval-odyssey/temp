@@ -11,9 +11,22 @@
     bottom: 0%;
     left: 0%;
     right: 0%;
+    height: 100vh;
+    width: 100vh;
     animation: animate-mask 60s linear infinite;
     mask-image: url(https://cdn.prod.website-files.com/656f60dc2d85b496beec7c35/657977f05dcfc3a99e198a10_perlin-noise.webp);
 }
+
+/* #dotsCanvas1 {
+    display: block;
+    position: absolute;
+    top: 40%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    animation: animate-mask 60s linear infinite;
+    mask-image: url(https://cdn.prod.website-files.com/656f60dc2d85b496beec7c35/657977f05dcfc3a99e198a10_perlin-noise.webp);
+} */
 
 @keyframes animate-mask {
     0% {
