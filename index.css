@@ -1,0 +1,35 @@
+.svg-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#dotsCanvas {
+    display: block;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    animation: animate-mask 60s linear infinite;
+    mask-image: url(https://cdn.prod.website-files.com/656f60dc2d85b496beec7c35/657977f05dcfc3a99e198a10_perlin-noise.webp);
+}
+
+@keyframes animate-mask {
+    0% {
+        -webkit-mask-position: 0 0;
+    }
+
+    100% {
+        -webkit-mask-position: 1000px 1000px;
+    }
+}
+
+#Layer_1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Make the SVG unclickable */
+}
